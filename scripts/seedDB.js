@@ -3,8 +3,7 @@ const db = require("../models");
 
 mongoose.connect(
   process.env.MONGODB_URI ||
-  "mongodb://localhost/googlebooks"
-);
+  "mongodb://booksearch:a123456@ds149146.mlab.com:49146/heroku_7z7slkq5");
 
 const bookSeed = [
   {
