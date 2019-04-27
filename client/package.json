@@ -1,0 +1,32 @@
+{
+  "name": "mern",
+  "version": "0.1.0",
+  "description": "Mern Demo",
+  "private": true,
+  "homepage": "https://github.com/mbouhoum1988/react-book-search",
+  "proxy": "http://localhost:3001",
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^2.1.1",
+    "route": "^0.2.5",
+    "uuid": "^3.3.2",
+    "gh-pages": "^1.1.0"
+
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" 
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

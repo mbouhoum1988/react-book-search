@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  justify-content: flex-start;
+  min-height: 80px;
+  padding: 20px;
+  background: lightcyan;
+}
+.header a {
+    padding:0 40px;
+    text-decoration: none;
+    color: #000;
+}
+.search-box{
+  min-height: 200px;
+  border: 1px solid black;
+  margin: 20px;
+  padding: 10px 30px;
+}
+.btn {
+  float: right;
+  margin: 20px 0px;
+}
+.book-detail {
+  margin: 20px;
+  border: 1px solid black;
+  min-height: 200px;
+  background: lightgray;
+  padding: 15px;
+}
+.card {
+  margin: 20px;
+}
+.btn-save{
+  margin: 10px;
+}
+.btn-info{
+  margin-right: 10px;
+}
+.btn-danger{
+  margin-right: 10px;
+}
+.description-image{
+  display: flex;
+  margin-top: 20px;
+}
+.img-fluid{
+  width: 200px;
+  height: 200px;
+  flex: 2;
+}
+.description{
+  flex: 10;
+  margin-left: 20px;
+}
+.jumbotron{
+  min-height: 250px;
+  background: lightskyblue;
+  color: #000;
+}
