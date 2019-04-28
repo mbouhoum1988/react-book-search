@@ -6,7 +6,7 @@ return (
     
             <div className="btn-save">
                 <button className="btn btn-danger" data-index={props.index} onClick={() => props.deleteBooks(props.index)}>delete</button>
-                <button className="btn btn-info" data-index={props.index} onClick={props.viewsContent}>view</button>
+                <button className="btn btn-info" data-index={props.index} onClick={ () => props.viewsContent(props.index)}>view</button>
             </div>
             <h3>{props.title}</h3>
             <h5>{props.authors}</h5>

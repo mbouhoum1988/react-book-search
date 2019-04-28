@@ -5,10 +5,10 @@ import Card from "./Card";
 import Booksdetail from './Booksdetail';
 import API from "../utils/API";
 
-
 class BookSaved extends Component {
     state = {
         book:[],
+        link: []
     }
    
     componentDidMount = () => {
@@ -29,11 +29,14 @@ class BookSaved extends Component {
           .catch(err => console.log(err));
       };
 
-    viewsContent = (event) => {
-        event.preventDefault();
-        const index = event.target.dataset.index;
-        const book = this.state.book[index]
-        window.open( book.link );
+    viewsContent = (index) => {
+        API.Book(index)
+        .then(res => {
+          this.setState({ link: res.data});
+          const link = this.state.link.link;
+          window.open( link );
+           })
+        .catch(err => console.log(err));
     }
 
     render() {
@@ -62,8 +65,7 @@ class BookSaved extends Component {
                       />
                   );
                 }
-                )
-            
+              )
             )}
           </Card> 
         </div>    
